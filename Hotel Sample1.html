@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Star Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Grand Luxury Hotel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="overlay">
+            <h2>Experience Luxury & Comfort</h2>
+            <p>Your perfect getaway starts here.</p>
+            <a href="#rooms" class="btn">View Rooms</a>
+        </div>
+    </section>
+
+    <section id="about" class="about container">
+        <h2>About Us</h2>
+        <p>Welcome to Grand Luxury Hotel, where comfort meets elegance. We provide world-class hospitality with top-notch amenities to make your stay unforgettable.</p>
+    </section>
+
+    <section id="rooms" class="rooms container">
+        <h2>Our Rooms</h2>
+        <div class="room-grid">
+            <div class="room">
+                <img src="room1.jpg" alt="Luxury Suite">
+                <h3>Luxury Suite</h3>
+                <p>Spacious suite with breathtaking views.</p>
+            </div>
+            <div class="room">
+                <img src="room2.jpg" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>Elegant room with modern amenities.</p>
+            </div>
+            <div class="room">
+                <img src="room3.jpg" alt="Executive Suite">
+                <h3>Executive Suite</h3>
+                <p>Perfect for business and leisure travelers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services container">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Spa & Wellness Center</li>
+            <li>Fine Dining Restaurants</li>
+            <li>Infinity Pool</li>
+            <li>Conference & Banquet Halls</li>
+            <li>24/7 Concierge Service</li>
+        </ul>
+    </section>
+
+    <section id="gallery" class="gallery container">
+        <h2>Gallery</h2>
+        <div class="slider">
+            <div><img src="gallery1.jpg" alt="Hotel Image 1"></div>
+            <div><img src="gallery2.jpg" alt="Hotel Image 2"></div>
+            <div><img src="gallery3.jpg" alt="Hotel Image 3"></div>
+            <div><img src="gallery4.jpg" alt="Hotel Image 4"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact container">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Grand Luxury Hotel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+</html>
